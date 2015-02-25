@@ -1,4 +1,4 @@
-### temporalia_solrify.pl -> removes all tags in the body
+### temporalia_solrify.pl
 temporalia_solrify.pl is a Perl script used by an organiser to strip all tags from the collection and save it to a document format that can be used for Solr. Even if you don't use Solr as a backend system, the script might be useful for those who want to remove the tags. 
 
 Here is a quick instruction. Assuming that you have uncompressed the collection into a folder "FOLDER", then all have to do is 
@@ -9,7 +9,7 @@ This will create a new file called "input_solr.xml"under the same folder as the 
 
 ***
 
-### CheckSyntax.class -> correct some markup inconsistency
+### CheckSyntax.class
 CheckSyntax.class is a Java class to turn the original document collection files into sanitised XML format. The program uses JSoup library as follows. 
 
 ```java -Xmx5G -cp .:jsoup-1.7.3.jar CheckSyntax INPUT_FILE > OUTPUT_FILE```
